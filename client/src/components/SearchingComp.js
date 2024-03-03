@@ -1,5 +1,8 @@
 import TextField from "@mui/material/TextField";
 import React, { useState, useEffect } from "react";
+import Alert from "@mui/material/Alert";
+import CheckIcon from "@mui/icons-material/Check";
+
 
 export function Searching() {
     const [searchValue, setSearchValue] = useState("");
@@ -15,7 +18,7 @@ export function Searching() {
           setSearched(true);
           setTimeout(() => {
             setSearched(false);
-          }, 1000);
+          }, 3000);
 
         }
         // Perform any action with the search value here
@@ -31,20 +34,25 @@ export function Searching() {
 
     if (!searched) {
       return (
-        <div className="container">
-        <TextField
-          type="search"
-          name="search"
-          value={searchValue}
-          onChange={handleChange}
-          onKeyDown={handleKeyDown}
-          placeholder="Enter location"
-        />
+        <div className="w-full rounded-xl overflow-hidden">
+          <TextField
+            type="search"
+            name="search"
+            value={searchValue}
+            onChange={handleChange}
+            onKeyDown={handleKeyDown}
+            placeholder="Enter location"
+            className="w-full bg-white"
+          />
       </div>
       );
     } else {
-      <div className="container">
-        <h1> Your friends have been notified! </h1>
-      </div>
+      return (
+        <div className="">
+          <Alert icon={<CheckIcon fontSize="inherit" />} severity="success">
+            Friend Added!
+          </Alert>
+        </div>
+      )
     }
 }

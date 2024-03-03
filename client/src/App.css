@@ -1,31 +1,5 @@
-header {
-  background-color: #333; /* Dark background color */
-  color: #fff; /* White text color */
-  padding: 20px; /* Add some padding */
-  text-align: center; /* Center align text */
-}
+@import "tailwindcss/base";
 
-/* Style the h1 tag inside the header */
-header h1 {
-  margin: 0; /* Remove default margin */
-}
+@import "tailwindcss/components";
 
-/* Style the content section */
-#content {
-  padding: 20px; /* Add padding */
-}
-
-/* Style the h2 tag inside the content section */
-#content h2 {
-  color: #333; /* Dark text color */
-}
-
-/* Style the paragraph tag inside the content section */
-#content p {
-  color: #666; /* Gray text color */
-}
-
-/* Style the button */
-.MuiButton-root {
-  margin-top: 20px; /* Add margin to the top */
-}
+@import "tailwindcss/utilities";

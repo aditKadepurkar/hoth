@@ -6,18 +6,18 @@ import { Searching } from "./components/SearchingComp";
 function App() {
 
   return (
-    <div>
+    <div className="p-10">
       <header>
         <h1>Welcome to My Homepage</h1>
       </header>
-      <section id="content">
-        <h2>This is the home page content.</h2>
-        <p>Welcome to my homepage! Feel free to explore.</p>
-        <Button variant="contained" color="primary">
-          Add friend
-        </Button>
+      <div className="h-screen p-10 rounded-xl bg-gray-600 items-center overflow-clip content-between">
+        <div className="relative justify-center">
+          <Button variant="contained" color="primary">
+            Add friend
+          </Button>
+        </div>
         <Searching/>
-      </section>
+      </div>
     </div>
   );
 }
