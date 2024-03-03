@@ -3,15 +3,19 @@ import "./App.css";
 import Button from "@mui/material/Button";
 import { Searching } from "./components/SearchingComp";
 import { Login } from "./components/LoginModal";
+import { Landing } from "./pages/landing";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 function App() {
 
   return (
-    <main>
-      
-
-    </main>
-
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+        </Routes>
+      </div>
+    </Router>
     /** This is the current progress */
     // <div className="p-10">
     //   <header>

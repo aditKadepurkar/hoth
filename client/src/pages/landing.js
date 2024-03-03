@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import "./App.css";
 import Button from "@mui/material/Button";
-import { Searching } from "./components/SearchingComp";
-import { Login } from "./components/LoginModal";
+import { Searching } from "../components/SearchingComp";
+import { Login } from "../components/LoginModal";
 
-function App() {
+export function Landing() {
 
 return (
     <div className="w-screen h-screen bg-gray-900">
