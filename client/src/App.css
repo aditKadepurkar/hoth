@@ -18,14 +18,25 @@ header h1 {
 /* Style the h2 tag inside the content section */
 #content h2 {
   color: #333; /* Dark text color */
+  text-align: center;
 }
 
 /* Style the paragraph tag inside the content section */
 #content p {
   color: #666; /* Gray text color */
 }
-
 /* Style the button */
 .MuiButton-root {
   margin-top: 20px; /* Add margin to the top */
+  display: block; /* Change the button display property to block */
+}
+
+/* Style the search field */
+.search-field {
+  width: 10000px; /* Set the width of the TextField */
+  margin-top: 20px; /* Add margin to the top */
+}
+
+.half-width {
+  width: 50%; /* Set the width to 50% */
 }

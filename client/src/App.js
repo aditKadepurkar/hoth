@@ -1,49 +1,37 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import Button from "@mui/material/Button";
-import TextField from "@mui/material/TextField";
+import { Searching } from "./components/SearchingComp";
+import Alert from "@mui/material/Alert";
+import CheckIcon from "@mui/icons-material/Check";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Import Routes and Route from react-router-dom
+import Home from "./pages/home";
+import About from "./pages/about";
 
 function App() {
-  const [searchValue, setSearchValue] = useState("");
-
-  const handleSearchChange = (event) => {
-    setSearchValue(event.target.value);
-  };
-
-  const handleSearchSubmit = () => {
-    console.log("Search submitted with value:", searchValue);
-    // Perform any action with the search value here
-  };
-
   return (
-    <div>
-      <header>
+    <Router>
+      <div>
         <h1>Welcome to My Homepage</h1>
-      </header>
-      <section id="content">
-        <h2>This is the home page content.</h2>
-        <p>Welcome to my homepage! Feel free to explore.</p>
-        <Button variant="contained" color="primary">
-          Add friend
-        </Button>
-        <TextField
-          label="Search"
-          variant="outlined"
-          value={searchValue}
-          onChange={handleSearchChange}
-          fullWidth
-          margin="normal"
-          InputLabelProps={{
-            shrink: true,
-          }}
-          onKeyPress={(event) => {
-            if (event.key === "Enter") {
-              handleSearchSubmit();
-            }
-          }}
-        />
-      </section>
-    </div>
+
+        {/* Use Routes component instead of Route */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+        {/* <section id="content">
+          <h2>This is the home page content.</h2>
+          <p>Welcome to my homepage! Feel free to explore.</p>
+          <Button variant="contained" color="primary">
+            Add friend
+          </Button>
+          <Searching />
+          <Alert icon={<CheckIcon fontSize="inherit" />} severity="success">
+            Here is a gentle confirmation that your action was successful.
+          </Alert>
+        </section> */}
+      </div>
+    </Router>
   );
 }
 
