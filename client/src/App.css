@@ -1,38 +1,31 @@
-.App {
-  text-align: center;
+header {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* White text color */
+  padding: 20px; /* Add some padding */
+  text-align: center; /* Center align text */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Style the h1 tag inside the header */
+header h1 {
+  margin: 0; /* Remove default margin */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Style the content section */
+#content {
+  padding: 20px; /* Add padding */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Style the h2 tag inside the content section */
+#content h2 {
+  color: #333; /* Dark text color */
 }
 
-.App-link {
-  color: #61dafb;
+/* Style the paragraph tag inside the content section */
+#content p {
+  color: #666; /* Gray text color */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Style the button */
+.MuiButton-root {
+  margin-top: 20px; /* Add margin to the top */
 }
