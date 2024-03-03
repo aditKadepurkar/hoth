@@ -4,15 +4,16 @@ import Button from "@mui/material/Button";
 import { Searching } from "./components/SearchingComp";
 import { Login } from "./components/LoginModal";
 import { Landing } from "./pages/landing";
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Home } from "./pages/home";
 
 function App() {
-
   return (
     <Router>
       <div>
         <Routes>
           <Route path="/" element={<Landing />} />
+          <Route path="/home" element={<Home />} />
         </Routes>
       </div>
     </Router>
