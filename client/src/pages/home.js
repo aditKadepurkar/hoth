@@ -1,6 +1,4 @@
 import React from "react";
-import Button from "@mui/material/Button";
-import { Link } from "react-router-dom";
 import { Login } from "../components/LoginModal";
 
 // async function getData() {

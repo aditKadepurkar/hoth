@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import "./App.css";
 import { Landing } from "./pages/landing";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import { Home } from "./pages/home";
-import { Profile } from "./pages/profile";
 
 function App() {
   return (
@@ -11,6 +10,7 @@ function App() {
       <div>
         <Routes>
           <Route path="/" element={<Landing />} />
+          <Route path="/home" element={<Home />} />
         </Routes>
       </div>
     </Router>
