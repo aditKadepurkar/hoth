@@ -1,8 +1,16 @@
 import React from "react";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
+import { Login } from "../components/LoginModal";
 
-export function Home() {
+// async function getData() {
+//   const res = await fetch("http://0.0.0.0:7000/");
+//   const data = JSON.parse(await res.json());
+//   return data;
+// }
+
+export async function Home() {
+  // const user = await getData()
   return (
     <div>
       <header>
