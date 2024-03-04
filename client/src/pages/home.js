@@ -1,30 +1,27 @@
 import React from "react";
+import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 
-class Home extends React.Component {
-  render() {
-    return (
-      <div>
-        <header>
-          <h1>Welcome to My Homepage</h1>
-        </header>
-        <nav>
-          <a href="#" id="home-link">
-            Home
-          </a>
-          <a href="#" id="about-link">
-            About
-          </a>
-          <a href="#" id="contact-link">
-            Contact
-          </a>
-        </nav>
-        <section id="content">
-          <h2>This is the home page content.</h2>
-          <p>Welcome to my homepage! Feel free to explore.</p>
-        </section>
-      </div>
-    );
-  }
+export function Home() {
+  return (
+    <div>
+      <header>
+        <h1>Welcome to My Homepage</h1>
+      </header>
+      <Link to="/profile">
+        <Button variant="contained" color="primary">
+          Profile Page
+        </Button>
+      </Link>
+      <Link to="/">
+        <Button variant="contained" color="primary">
+          Log Out
+        </Button>
+      </Link>
+      <section id="content">
+        <h2>This is the home page content.</h2>
+        <p>Welcome to my homepage! Feel free to explore.</p>
+      </section>
+    </div>
+  );
 }
-
-export default Home;
