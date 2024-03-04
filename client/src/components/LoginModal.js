@@ -20,14 +20,14 @@ export function Login() {
   // -H 'accept: application/json' \
   // -d ''
 
-  async function login() {
-    params = {"l1" : "bill", "pw" : "1234"}
-    url = "http://127.0.0.1:8000/login"
-    const res = await fetch(url, params)
-    const data = JSON.parse(await res.json());
-    console.log(data)
-    return data;
-  }
+  // async function login() {
+  //   params = {"l1" : "bill", "pw" : "1234"}
+  //   url = "http://127.0.0.1:8000/login"
+  //   const res = await fetch(url, params)
+  //   const data = JSON.parse(await res.json());
+  //   console.log(data)
+  //   return data;
+  // }
 
   return (
     <div className="justify-center w-full h-full p-20">
@@ -60,7 +60,7 @@ export function Login() {
           {/* Wrap the Button with a Link component */}
           <Link to="/home">
             <Button variant="contained" color="primary"
-              onClick={login}
+              // onClick={login}
             >
               Login
             </Button>

@@ -1,12 +1,10 @@
 import React from "react";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
-import Avatar from "@mui/material/Avatar";
-import Stack from "@mui/material/Stack";
 
 
 
-export async function Profile() {
+export function Profile() {
   // const data_person = await getData();
 
   return (
