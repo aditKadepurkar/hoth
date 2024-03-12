@@ -1,7 +1,7 @@
 import TextField from "@mui/material/TextField";
 import React, { useState, useEffect } from "react";
 import Alert from "@mui/material/Alert";
-import CheckIcon from "@mui/icons-material/Check";
+
 
 
 export function Searching() {
@@ -49,9 +49,9 @@ export function Searching() {
     } else {
       return (
         <div className="">
-          <Alert icon={<CheckIcon fontSize="inherit" />} severity="success">
+          {/* <Alert icon={<CheckIcon fontSize="inherit" />} severity="success">
             Friend Added!
-          </Alert>
+          </Alert> */}
         </div>
       )
     }

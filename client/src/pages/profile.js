@@ -15,7 +15,6 @@ export function Profile() {
             <img
               src="/photo1.jpg"
               className="rounded-full"
-            
             >
             
             </img>
